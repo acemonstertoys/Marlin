@@ -1,6 +1,26 @@
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
+## AMT Type-A firmware
+
+This repo contains the Marlin firmware as used in Ace Monster Toys' Type-A 3D printer.
+
+  [Ace Monster Toys](http://www.acemonstertoys.org/3d-printing/)
+
+The printer started life as a Type-A Machines Series I, but has been heavily modified over the last two years.  Differences include:
+
+  - E3D-style all metal hotend
+  - reworked workpiece and hotend fans
+  - RepRapDiscount-style LCD and SD reader
+  - inductive proximity sensor
+  - Aluminum bed
+
+Mostly this is just a safe storage place for our customized Configuration.h and Configuration_adv.h.  A small change was also made to pins_RAMPS.h to swap the Y and Z stepper pins.  This allows the Type-A to use the dual-plug Z channel for its dual-Y-stepper arrangement.
+
+Marlin's original GPL License as listed below remains in force.
+
+Original Marlin Readme follows
+
 ## Marlin 1.1
 
 Marlin 1.1 represents an evolutionary leap over Marlin 1.0.2. It is the result of over two years of effort by several volunteers around the world who have paid meticulous and sometimes obsessive attention to every detail. For this release we focused on code quality, performance, stability, and overall user experience. Several new features have also been added, many of which require no extra hardware.
@@ -88,5 +108,3 @@ Notable contributors include:
 Marlin is published under the [GPL license](https://github.com/COPYING.md) because we believe in open development. The GPL comes with both rights and obligations. Whether you use Marlin firmware as the driver for your open or closed-source product, you must keep Marlin open, and you must provide your compatible Marlin source code to end users upon request. The most straightforward way to comply with the Marlin license is to make a fork of Marlin on Github, perform your modifications, and direct users to your modified fork.
 
 While we can't prevent the use of this code in products (3D printers, CNC, etc.) that are closed source or crippled by a patent, we would prefer that you choose another firmware or, better yet, make your own.
-
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=ErikZalm&url=https://github.com/MarlinFirmware/Marlin&title=Marlin&language=&tags=github&category=software)
